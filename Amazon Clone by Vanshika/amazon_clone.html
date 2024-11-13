@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+        .navbar{
+            height: 60px;
+            background-color: #0f1111;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .nav-logo{
+            height: 50px;
+            width: 170px;
+        }
+        .border{
+            border: 1.5px solid transparent;
+        }
+        .border:hover{
+            border: 1.5px solid white;
+        }
+        .logo{
+            background-image: url(amazon.png);
+            background-size: cover;
+            height: 50px;
+            width: 170px;
+        }
+        .add1{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 15px;
+        }
+        .add2{
+            font-size: 1rem;
+            margin-left: 3px;
+        }
+        .add-icon{
+            display: flex;
+            align-items: center;
+        }
+        .nav-search{
+            display: flex;
+            justify-content: space-evenly;
+            height: 40px;
+            width: 600px;
+            border-radius: 4px;
+        }
+        .nav-search:hover{
+            border: 1.5px solid #febd68;
+            border-radius: 4px;
+        }
+        .search-select{
+            background-color: #f3f3f3;
+            width:40px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+        }
+        .search-input{
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+        }
+        .search-icon{
+            width:45px;
+            display:flex;
+            justify-content:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.2rem;
+            background-color: #febd68;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: #0f1111;
+        }
+        span{
+            font-size: 0.7rem;
+        }
+        .nav-second{
+            font-size: 0.85rem;
+            font-weight:700;
+        }
+        .nav-cart i{
+            font-size: 30px;
+        }
+        .nav-cart{
+            font-size: 0.85 rem;
+            font-weight: 700;
+        }
+        
+        .panel{
+            height:40px;
+            background-color:#222f3d;
+            display:flex;
+            color:#f3f3f3;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .panel-options p{
+            display:inline;
+            margin-left:15px;
+        }
+        .panel-options{
+            width: 70%;
+            font-size: 0.85rem;
+        }
+        .panel-deals{
+            font-size:0.9rem;
+            font-weight:700;
+        }
+
+        .hero-section{
+            background-image: url(img1.jpg);
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .hero-msg{
+            background-color: white;
+            color: black;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+            width: 95%;
+            margin-bottom: 20px;
+        }
+        .hero-msg a{
+            color:#007185
+        }
+
+        .shop-section{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(245, 158, 173, 0.395);
+        }
+        .box{
+            height:400px;
+            width:23%;
+            background-color: white;
+            padding: 20px 0px 15px;
+        }
+        .img{
+            background-size: cover;
+            height: 250px;
+
+        }
+        .box-img1{
+            background-image: url(Shoes.jpg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-add border">
+                <p class="add1">Deliver to</p>
+                <div class="add-icon">
+                <i class="ri-map-pin-line"></i>
+                <p class="add2">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Hello, Sign-in</span></p>
+                <p class="nav-second">Account and Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="ri-shopping-cart-fill"></i>Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="ri-menu-line"></i>
+                All
+            </div>
+            <div class="panel-options">
+                <p>Today's Deals</p>
+                <p>Customer Services</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop Deals In Beauty Products
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href=""> Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Shop Deals In Fashion</h2>
+                <div class="img box-img1"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>New Home Arrivals</h2>
+                <div class="img box-img2"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+    </div>
+</body>
+</html>
